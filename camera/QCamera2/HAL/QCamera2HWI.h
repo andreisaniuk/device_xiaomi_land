@@ -384,6 +384,7 @@ private:
     QCameraExif *getExifData();
     cam_sensor_t getSensorType();
     bool isLowPowerMode();
+    nsecs_t getBootToMonoTimeOffset();
 
     int32_t processAutoFocusEvent(cam_auto_focus_data_t &focus_data);
     int32_t processZoomEvent(cam_crop_data_t &crop_info);
@@ -766,6 +767,10 @@ private:
     bool m_bNeedRestart;
     Mutex mMapLock;
     Condition mMapCond;
+    
+    //The offset between BOOTTIME and MONOTONIC timestamps
+    nsecs_t mBootToMonoTimestampOffset;
+    
     // Count to determine the number of preview frames ignored for displaying.
     uint8_t mIgnoredPreviewCount;
 };
