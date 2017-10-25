@@ -14,3 +14,10 @@ PRODUCT_PACKAGES += \
 # Snap
 PRODUCT_PACKAGES += \
     Snap
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8937 \
+    libmm-qcamera \
+    libmmjpeg_interface \
+    libqomx_core
