@@ -52,6 +52,8 @@ ro.qualcomm.bluetooth.pbap=true
 # Camera
 camera.display.lmax=1280x720
 camera.display.umax=1920x1080
+persist.camera.time.monotonic=1
+media.camera.ts.monotonic=1
 persist.camera.gyro.android=1
 persist.camera.is_type=1
 vidc.enc.narrow.searchrange=1
@@ -96,9 +98,6 @@ persist.qfp=false
 
 # Fm
 ro.fm.transmitter=false
-
-# Frp
-ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # GPS
 persist.gps.qc_nlp_in_use=1
