@@ -20,4 +20,5 @@ PRODUCT_PACKAGES += \
     camera.msm8937 \
     libmm-qcamera \
     libmmjpeg_interface \
+    libmmcamera_interface \
     libqomx_core
