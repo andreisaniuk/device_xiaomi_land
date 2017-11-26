@@ -167,7 +167,8 @@ PRODUCT_COPY_FILES += \
 
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config \
+    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Libshims
 PRODUCT_PACKAGES += \
@@ -210,7 +211,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8937
-    
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -226,7 +227,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
-    libxml2
+    libxml2 \
+    libprotobuf-cpp-full
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -238,7 +240,7 @@ PRODUCT_COPY_FILES += \
 
 # Snap
 PRODUCT_PACKAGES += \
-    Snap
+    SnapDragonCamera
 
 # Thermal
 PRODUCT_COPY_FILES += \

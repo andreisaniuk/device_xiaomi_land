@@ -147,7 +147,7 @@ void init_variant_properties()
     }
 
     if (board_id == "S88537AB1"){
-        property_set("ro.product.model", "Redmi 3X");
+        property_override("ro.product.model", "Redmi 3X");
     } else {
         property_set("ro.product.model", "Redmi 3S");
     }
